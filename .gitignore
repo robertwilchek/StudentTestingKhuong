@@ -1,0 +1,66 @@
+__pycache__/
+*.pyc
+hello.txt
+
+# Visual Studio artifacts
+.vs/
+**/.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.opendb
+*.VC.db
+*.VC.db-shm
+*.VC.db-wal
+*.ipch
+# Build directories
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Xx]64/
+[Xx]86/
+[Bb]uild/
+[Bb]in/
+[Ii]pch/
+
+# Temporary files
+*.log
+*.tlog
+*.tmp
+
+# Visual C++ project-specific
+*.vcproj.*
+*.vcxproj.user
+*.vcxproj.filters
+*.psess
+
+# Visual Studio cache files
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.ipdb
+*.iobj
+*.res
+*.tlh
+*.tli
+*.tmp_proj
+*.idb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlh
+*.tli
+
+# Others
+*.dbmdl
+*.bak
