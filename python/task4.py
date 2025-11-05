@@ -1,5 +1,6 @@
 # orders_data.py
 from typing import List, Dict, Any
+from operator import itemgetter
 
 Order = Dict[str, Any]
 ORDERS: List[Order] = [
@@ -10,9 +11,5 @@ ORDERS: List[Order] = [
 ]
 
 if __name__ == "__main__":
-    
-# By ID
-# By Total
-# BY Time Created
-# By First Name
-# By Last Name
+    # Sort by total DESC then sort by time CREATED
+    sorted_l = sorted(ORDERS, key=lambda x:(x['total'], x['created']))
