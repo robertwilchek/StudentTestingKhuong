@@ -8,3 +8,11 @@ ORDERS: List[Order] = [
     {"id": 103, "total": 120.00, "created": "2025-01-14T08:05:00", "customer": {"first": "Ben", "last": "Adams"}},
     {"id": 104, "total": 75.50, "created": "2025-01-13T12:00:00", "customer": {"first": "Cara", "last": "Lopez"}},
 ]
+
+if __name__ == "__main__":
+    
+# By ID
+# By Total
+# BY Time Created
+# By First Name
+# By Last Name

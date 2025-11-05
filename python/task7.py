@@ -8,7 +8,14 @@ def group_totals_by_customer(orders):
     TODO: implement
     """
     sums = defaultdict(float)
-    
+
+    for row in orders:
+        customer_name = row.get("customer")
+        key = f"{customer_name.get("last")}, {customer_name.get("first")}"
+
+        # If customer already in dict then add previous total to current total
+        sums[key] = row.get("total") + sums.get(key) if key in sums else row.get("total")
+
     return dict(sums)
 
 def top_customers(sums, n=3):
@@ -16,6 +23,7 @@ def top_customers(sums, n=3):
     Return a list of (name, total) sorted by total DESC, then name ASC.
     TODO: implement
     """
+    
     
     return []
 
@@ -25,6 +33,7 @@ def render_html(top_list):
     TODO: implement (simple string builder is fine)
     """
     title = "Customer Spend — Top 3"
+    html = ""
     return ""
 
 if __name__ == "__main__":

@@ -1,8 +1,10 @@
-public class SumBug {
+public class task2 {
 
     public static int sum(int[] nums) {
         int total = 0;
-        for (int i = 0; i <= nums.length; i++) { 
+        // Set to less than nums.length which will stop at last index
+        // Less than AND equal to length of array will go out of bounds
+        for (int i = 0; i < nums.length; i++) { 
             total += nums[i];
         }
         return total;

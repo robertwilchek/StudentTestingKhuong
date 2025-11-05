@@ -1,5 +1,7 @@
-def greet(name)
+# Missing colon
+def greet(name):
     message = f"Hello, {name}!"
     return message
 
-print(greet("Team")
+# Missing parentheses
+print(greet("Team"))
