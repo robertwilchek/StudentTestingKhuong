@@ -5,7 +5,7 @@ int main()
 {
     // Prints to term
     std::cout << "Hello World" << std::endl;
-
+                        
     // Print to file
     std::ofstream outputFile;
     outputFile.open("HelloWorld.txt");
